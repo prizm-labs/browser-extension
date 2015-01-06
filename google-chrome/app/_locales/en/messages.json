@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Prizm",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Launches and manages Prizm games in Chrome",
+    "description": "The description of the application"
+  }
+}
