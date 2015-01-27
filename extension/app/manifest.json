@@ -46,6 +46,18 @@
     "tabs",
     "management",
     "http://*/*",
-    "https://*/*"
-  ]
+    "https://*/*",
+    "experimental",
+    {"socket": [
+        "udp-send-to"
+    ]},
+    "app.window"
+  ],
+
+  "sockets": {
+    "udp": {
+      "bind": "10.0.1.15:33333",
+      "send": "*"
+    }
+  }
 }

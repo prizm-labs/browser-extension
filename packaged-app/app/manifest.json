@@ -1,0 +1,94 @@
+{
+  	"name": "__MSG_appName__",
+  	"description": "__MSG_appDescription__",
+  	"version": "1",
+  	"manifest_version": 2,
+  	"default_locale": "en",
+  	"permissions": [
+  		{
+  			"socket": [
+  				"tcp-listen:*:*",
+  				"tcp-connect:*:*",
+  				"udp-bind:*:*",
+  				"udp-send-to:*:*"
+  			]
+  		},
+  		"adview",
+  		"alarms",
+  		"app.runtime",
+  		"app.window",
+  		"audio",
+  		"audioCapture",
+  		"bluetooth",
+  		"clipboardRead",
+  		"clipboardWrite",
+  		"contextMenus",
+  		"desktopCapture",
+  		"diagnostics",
+  		"dns",
+  		"experimental",
+  		"fileBrowserHandler",
+  		{
+  			"fileSystem": [
+  				"write",
+  				"retainEntries",
+  				"directory"
+  			]
+  		},
+  		"fullscreen",
+  		"gcm",
+  		"geolocation",
+  		"identity",
+  		"idle",
+  		"infobars",
+  		"location",
+  		{
+  			"mediaGalleries": [
+  				"read",
+  				"delete",
+  				"copyTo",
+  				"allAutoDetected"
+  			]
+  		},
+  		"notifications",
+  		"pointerLock",
+  		"power",
+  		"pushMessaging",
+  		"serial",
+  		"signedInDevices",
+  		"storage",
+  		"syncFileSystem",
+  		"system.cpu",
+  		"system.display",
+  		"system.memory",
+  		"system.storage",
+  		"tts",
+  		"unlimitedStorage",
+  		"usb",
+  		"videoCapture",
+  		"wallpaper",
+  		"webview",
+  		"<all_urls>"
+  	],
+  	"icons": {
+  		"16": "images/icon-16.png",
+  		"48": "images/icon-48.png",
+  		"128": "images/icon-128.png"
+  	},
+  	"app": {
+  		"background": {
+  			"scripts": [
+  				"scripts/main.js",
+  				"scripts/chromereload.js"
+  			]
+  		}
+  	},
+  	"file_browser_handlers": {
+  		"id": "upload",
+  		"default_title": "File browser",
+  		"file_filters": [
+  			"filesystem:*.*"
+  		]
+  	},
+  	"web_accessible_resources": "images/icon-48.png"
+  }
